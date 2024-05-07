@@ -21,9 +21,11 @@ export default function RootLayout({
       <body className={inter.className}>
         <div className="flex">
           <Sidebar />
-          <Navbar />
+          <div className="flex flex-col w-full">
+            <Navbar />
+            {children}
+          </div>
         </div>
-        {children}
       </body>
     </html>
   );

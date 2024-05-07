@@ -12,14 +12,14 @@ const Sidebar: React.FC = () => {
   };
 
   return (
-    <div className="h-screen w-[15%] border-r-[1px] py-[9px] flex flex-col">
+    <div className="h-screen w-[15%] border-r-[1px] py-[3px] flex flex-col bg-white">
       <Image
         width={350}
         height={301}
         src="/images/Logo.png"
         alt="Company Logo"
       />
-      <div className="flex flex-col gap-y-2 pr-[10px] mt-5">
+      <div className="flex flex-col gap-y-1 pr-[10px] mt-2">
         {menuItemsData.map((item, index) => (
           <MenuItem
             key={index}
