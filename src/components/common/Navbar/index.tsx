@@ -8,7 +8,7 @@ interface IconContainerProps {
 
 const Navbar: React.FC = () => {
   return (
-    <div className='bg-white px-[41px] flex items-center h-[101px] justify-between w-full'>
+    <header className='bg-white px-[41px] flex items-center h-[101px] justify-between w-full'>
       <h2 className='text-[#343C6A] font-semibold text-[28px]'>Free-LighthouseGPT</h2>
       <div className='md:flex hidden gap-[30px]'>
         <IconContainer iconSrc="/icons/settings.svg" alt='settings icon' />
@@ -21,7 +21,7 @@ const Navbar: React.FC = () => {
           alt="Profile"
         />
       </div>
-    </div>
+    </header>
   );
 };
 
